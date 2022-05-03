@@ -2,6 +2,7 @@
   <div id="app">
      <SiteHeader />
      <SiteMain />
+     <SiteOption />
 
 
   </div>
@@ -11,12 +12,14 @@
 <script>
 import SiteHeader from '@/components/HeaderComponent.vue'
 import SiteMain from '@/components/MainComponent.vue'
+import SiteOption from '@/components/OptionComponent.vue'
 
 export default {
   name: "App",
   components: {
     SiteHeader,
     SiteMain,
+    SiteOption,
   },
 };
 </script>
