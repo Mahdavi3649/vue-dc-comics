@@ -49,11 +49,6 @@ export default {
 
 <style lang="scss" scoped>
 
-.container{
-    width: 1000px;
-    margin: auto;
-}
-
 .row{
     display: flex;
     align-items: center;

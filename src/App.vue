@@ -3,6 +3,7 @@
      <SiteHeader />
      <SiteMain />
      <SiteOption />
+     <SiteFooterTop />
 
 
   </div>
@@ -13,6 +14,7 @@
 import SiteHeader from '@/components/HeaderComponent.vue'
 import SiteMain from '@/components/MainComponent.vue'
 import SiteOption from '@/components/OptionComponent.vue'
+import SiteFooterTop from '@/components/FooterTComponent.vue'
 
 export default {
   name: "App",
@@ -20,6 +22,7 @@ export default {
     SiteHeader,
     SiteMain,
     SiteOption,
+    SiteFooterTop,
   },
 };
 </script>
@@ -37,5 +40,30 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+.row{
+  display: flex;
+}
+
+.col-2 {
+  width: calc(100% / 12) * 2;
+}
+
+.col-4 {
+  width: calc(100% / 12) * 4;
+}
+
+.col-8 {
+  width: calc(100% / 12) * 8;
+}
+
+.col-6{
+  width: calc(100% / 12) * 6;
 }
 </style>
