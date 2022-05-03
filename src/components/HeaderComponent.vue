@@ -58,7 +58,7 @@ export default {
                 display: inline-block;
                 text-transform: uppercase;
                 padding: 32px 10px;
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 700;
             }
         }

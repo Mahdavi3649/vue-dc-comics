@@ -18,6 +18,7 @@
                 </div>
             </div>
         </div>
+
     </footer>
 </template>
 
@@ -38,14 +39,14 @@ export default {
 
 h3 {
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 700;
     color: #0282F9;
 }
 button {
     text-transform: uppercase;
     color: white;
     background-color: transparent;
-    padding: 10px;
+    padding: 10px 20px;
     font-weight: 600;
     border: 2px solid #0282F9;
 }
