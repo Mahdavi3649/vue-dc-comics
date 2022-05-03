@@ -1,5 +1,5 @@
 <template>
-    <footer class="top">
+    <section class="top">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -59,7 +59,7 @@
 
             </div>
         </div>
-    </footer>
+    </section>
 </template>
 
 <script>
