@@ -1,33 +1,27 @@
 <template>
-    <main>
-        <div class="jumbotron">
-            <img src="" alt="">
-        </div>
-       <div class="container">
-
-       </div>
-    </main>
+  <main>
+    <div class="jumbotron"></div>
+    <seriesList />
+  </main>
 </template>
 
 <script>
+import seriesList from "@/components/SeriesListComponent.vue";
 export default {
-    name: 'MainComponent'
-}
+  name: "MainComponent",
+  components: {
+    seriesList,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-
-main{
-    background-color: black;
-    width: 100vw;
-    height: 600px;
-    .jumbotron{
-        background-image: url('@/assets/img/jumbotron.jpg');
-        background-size: cover;
-        width: 100%;
-        height: 300px;
-
-    }
+main {
+  background-color: $dc-dark;
+  .jumbotron {
+    background-image: url("@/assets/img/jumbotron.jpg");
+    background-size: cover;
+    height: 300px;
+  }
 }
-
 </style>
