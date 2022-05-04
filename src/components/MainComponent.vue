@@ -1,7 +1,10 @@
 <template>
     <main>
+        <div class="jumbotron">
+            <img src="" alt="">
+        </div>
        <div class="container">
-           <h3> --- Content goes here --- </h3>
+
        </div>
     </main>
 </template>
@@ -16,15 +19,14 @@ export default {
 
 main{
     background-color: black;
-    padding: 2rem; 
-    .container{
-        width: 1000px;
-        margin: auto;
-    }
-    
-    h3{
-        color: white;
-        text-align: left;
+    width: 100vw;
+    height: 600px;
+    .jumbotron{
+        background-image: url('@/assets/img/jumbotron.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+
     }
 }
 

@@ -8,16 +8,7 @@
                 <div class="col-8">
                      <nav>
                         <ul>
-                            <li>characters</li>
-                            <li class="active">comics</li>
-                            <li>movies</li>
-                            <li>tv</li>
-                            <li>games</li>
-                            <li>collectibles</li>
-                            <li>videos</li>
-                            <li>fans</li>
-                            <li>news</li>
-                            <li>shop</li>
+                            <li v-for="item in menu" :key="item.id"><a :href="item.src" :class="item.text === 'comics' ? 'active' : ''">{{item.text}}</a></li>
                         </ul>
                      </nav>
                 </div>
@@ -28,7 +19,65 @@
 
 <script>
 export default {
-    name: 'HeaderComponent'
+    name: 'HeaderComponent',
+    data(){
+       return {
+           menu: [
+                {
+                    id: 1,
+                    src: '#',
+                    text: 'characters'
+                },
+                {
+                    id: 2,
+                    src: '#',
+                    text: 'comics'
+                },
+                {
+                    id: 3,
+                    src: '#',
+                    text: 'movies'
+                },
+                {
+                    id: 4,
+                    src: '#',
+                    text: 'tv'
+                },
+                {
+                    id: 5,
+                    src: '#',
+                    text: 'games'
+                },
+                {
+                    id: 6,
+                    src: '#',
+                    text: 'collectibles'
+                },
+                {
+                    id: 7,
+                    src: '#',
+                    text: 'videos'
+                },
+                {
+                    id: 8,
+                    src: '#',
+                    text: 'fans'
+                },
+                {
+                    id: 9,
+                    src: '#',
+                    text: 'news'
+                },
+                {
+                    id: 10,
+                    src: '#',
+                    text: 'shop'
+                },
+           ]
+
+       }
+    }
+
 }
 </script>
 
@@ -53,6 +102,7 @@ export default {
     nav{
         ul{
             list-style: none;
+           
 
             li{
                 display: inline-block;
@@ -60,23 +110,25 @@ export default {
                 padding: 32px 10px;
                 font-size: 14px;
                 font-weight: 700;
+                border-bottom: 6px solid transparent;
+
+                &:hover{
+                border-bottom: 3px solid blue;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
             }
+            
         }
     }
 
     .active {
-    color: blue;
-    position: relative;
+     color: blue;
+
 }
-.active:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 50%; 
-  height: 1px;
-  transform: translate(-50%,-50%);
-  border-bottom: 2px solid blue;
-}
+
    
 </style>

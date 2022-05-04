@@ -86,7 +86,7 @@ export default {
             font-size: 13px;
             a{
                 text-decoration: none;
-                color: #648686;
+                color: gray;
                
             }
         }

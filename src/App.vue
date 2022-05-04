@@ -71,4 +71,8 @@ export default {
 .col-6{
   width: calc(100% / 12) * 6;
 }
+
+.col-10{
+  width: calc(100% / 12) * 10;
+}
 </style>

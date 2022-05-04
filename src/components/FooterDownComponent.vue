@@ -3,11 +3,11 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-2">
                     <button>Sign up now</button>
                 </div>
 
-                <div class="col-8">
+                <div class="col-10">
                     <h3>follow us</h3>
                     <img src="@/assets/img/footer-facebook.png" alt="">
                     <img src="@/assets/img/footer-twitter.png" alt="">
@@ -33,8 +33,7 @@ export default {
 
 .down{
     background-color: #303030;
-    padding: 30px 20px;
-    height: 100px;
+    padding: 30px;
 }
 
 h3 {
@@ -47,14 +46,14 @@ button {
     color: white;
     background-color: transparent;
     padding: 10px 20px;
-    font-weight: 600;
+    font-weight: 500;
     border: 2px solid #0282F9;
 }
-.col-8 {
+.col-10 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    column-gap: 1rem;
+    column-gap: 15px;
 }
     
 </style>
