@@ -7,15 +7,15 @@
         </div>
         <div class="col-8">
           <nav>
-            <ul>
-              <li v-for="item in menu" :key="item.id">
-                <a
-                  :href="item.href"
-                  :class="item.text === 'comics' ? 'active' : ''"
-                  >{{ item.text }}</a
-                >
-              </li>
-            </ul>
+            <div class="main-menu">
+              <a
+                v-for="item in menu"
+                :key="item.id"
+                :href="item.href"
+                :class="item.text === 'comics' ? 'active' : ''"
+                >{{ item.text }}</a
+              >
+            </div>
           </nav>
         </div>
       </div>
@@ -90,6 +90,9 @@ header {
   .container {
     margin: auto;
     width: 1300px;
+    nav {
+      height: 70px;
+    }
   }
 
   .row {
@@ -101,32 +104,30 @@ header {
     width: 70px;
   }
 }
-
 nav {
-  ul {
-    list-style: none;
-
-    li {
-      display: inline-block;
-      text-transform: uppercase;
-      padding: 32px 10px;
-      font-size: 14px;
-      font-weight: 700;
-      border-bottom: px solid transparent;
-
-      &:hover {
-        border-bottom: 3px solid $dc-primary;
-      }
-
-      a {
-        text-decoration: none;
-        color: $dc-dark;
-      }
-    }
-  }
+  height: 70px;
 }
 
-.active {
-  color: blue;
+.main-menu {
+  a {
+    list-style: none;
+    text-decoration: none;
+    padding: 27px 10px;
+    text-transform: uppercase;
+    color: $dc-dark;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 14px;
+
+    .active {
+      color: $dc-primary;
+      border-bottom: 3px solid $dc-primary;
+    }
+
+    &:hover {
+      color: $dc-primary;
+      border-bottom: 3px solid $dc-primary;
+    }
+  }
 }
 </style>

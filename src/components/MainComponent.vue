@@ -7,11 +7,7 @@
         <button class="series_btn"><h3>Current Series</h3></button>
       </div>
       <div class="row">
-        <seriesList
-          :serie="serie"
-          v-for="(serie, index) in movies"
-          :key="index"
-        />
+        <seriesList :item="item" v-for="(item, index) in movies" :key="index" />
       </div>
 
       <div>

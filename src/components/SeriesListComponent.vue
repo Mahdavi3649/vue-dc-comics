@@ -1,8 +1,8 @@
 <template>
   <div class="col-2s">
     <div class="serie">
-      <img :src="serie.thumb" />
-      <h5 class="text-left">{{ serie.series }}</h5>
+      <img :src="item.thumb" />
+      <h5 class="text-left">{{ item.series }}</h5>
     </div>
   </div>
 </template>
@@ -12,7 +12,7 @@ export default {
   name: "SeriesListComponent",
 
   props: {
-    serie: Object,
+    item: Object,
   },
 };
 </script>
